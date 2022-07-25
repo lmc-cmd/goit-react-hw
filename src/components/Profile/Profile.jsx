@@ -1,31 +1,32 @@
-const Profile = () => {
-  return;
-  <div className="profile">
-    <div className="description">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-        alt="User avatar"
-        className="avatar"
-      />
-      <p className="name">Petra Marica</p>
-      <p className="tag">@pmarica</p>
-      <p className="location">Salvador, Brasil</p>
-    </div>
+const Profile = (props) => {
+  return (
+    <div className="profile">
+      <div className="description">
+        <img
+          src={props.avatar}
+          alt="User avatar"
+          className="avatar"
+        />
+        <p className="name">{props.username}</p>
+        <p className="tag">@{props.tag}</p>
+        <p className="location">{props.location}</p>
+      </div>
 
-    <ul className="stats">
-      <li>
-        <span className="label">Followers</span>
-        <span className="quantity">1000</span>
-      </li>
-      <li>
-        <span className="label">Views</span>
-        <span className="quantity">2000</span>
-      </li>
-      <li>
-        <span className="label">Likes</span>
-        <span className="quantity">3000</span>
-      </li>
-    </ul>
-  </div>;
+      <ul className="stats">
+        <li>
+          <span className="label">Followers</span>
+          <span className="quantity"><br /> {props.stats.followers}</span>
+        </li>
+        <li>
+          <span className="label">Views</span>
+          <span className="quantity"><br /> {props.stats.views}</span>
+        </li>
+        <li>
+          <span className="label">Likes</span>
+          <span className="quantity"><br /> {props.stats.likes}</span>
+        </li>
+      </ul>
+    </div>
+  );
 };
 export default Profile;
