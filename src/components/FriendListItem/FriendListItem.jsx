@@ -1,6 +1,6 @@
 const FriendListItem = props => {
   return (
-    <li className="item">
+    <li className="item" >
       <span className="status">{props.data.isOnline}</span>
       <img
         className="avatar"
