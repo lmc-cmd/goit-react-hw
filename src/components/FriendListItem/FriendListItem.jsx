@@ -1,32 +1,16 @@
+// import PropTypes from 'prop-types'
+import styles from './FriendListItem.module.css';
 const FriendListItem = props => {
   return (
-    <li
-      className="item"
-      style={{
-        width: '130px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        marginLeft: '2px',
-        border: '2px solid blue',
-      }}
-    >
+    <li className={styles['item']}>
       <span
-        className="status"
+        className={styles['status']}
         style={
           props.data.isOnline === true
             ? {
-                width: '8px',
-                height: '8px',
-                marginBottom: '3px',
-                borderRadius: '5px',
                 backgroundColor: 'green',
               }
             : {
-                width: '8px',
-                height: '8px',
-                marginBottom: '3px',
-                borderRadius: '5px',
                 backgroundColor: 'red',
               }
         }
@@ -51,3 +35,7 @@ const FriendListItem = props => {
   );
 };
 export default FriendListItem;
+
+// FriendListItem.propTypes = {
+
+// }
