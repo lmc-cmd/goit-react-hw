@@ -1,3 +1,4 @@
+import styles from './App.module.css'
 import Profile from '../components/Profile/Profile.jsx';
 import Statistics from '../components/Statistics/Statistics.jsx';
 import user from '../data/user.json';
@@ -9,17 +10,7 @@ import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-        flexDirection: 'column',
-      }}
-    >
+    <div className={styles["main-container"]} >
       <Profile
         username={user.username}
         tag={user.tag}

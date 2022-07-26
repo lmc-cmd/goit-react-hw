@@ -1,5 +1,6 @@
 thead tr {
   text-align: center;
+  background-color: aqua;
 }
 tr {
   text-align: right;
@@ -10,4 +11,8 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
   background-color: #7cbad4;
+}
+.transaction-history{
+  width: 800px;
+  border: 2px solid
 }

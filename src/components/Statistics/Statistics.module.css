@@ -1,0 +1,15 @@
+.title{
+    display: flex;
+    justify-content: center;
+}
+.stat-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+}

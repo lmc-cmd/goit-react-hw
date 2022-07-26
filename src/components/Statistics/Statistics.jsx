@@ -1,35 +1,31 @@
+import PropTypes from 'prop-types'
+import styles from '../Statistics/Statistics.module.css';
+
 const Statistics = props => {
   return (
     <section className="statistics">
-      <h2
-        className="title"
-        style={{ display: 'flex', justifyContent: 'center' }}
-      >
-        {props.title}
-      </h2>
-      <ul
-        className="stat-list"
-        style={{ display: 'flex', listStyle: 'none', padding: '0' }}
-      >
+      {props.title ? <h2 className={styles['title']}>{props.title}</h2> : ''}
+      <ul className={styles['stat-list']}>
         {props.stats.map(el => (
           <li
-            className="item"
+            className={styles['item']}
             key={el.id}
             style={{
-              display: 'flex',
-              flexDirection: 'column',
-              width: '100px',
-              alignItems: 'center',
               backgroundColor:
                 '#' + Math.floor(Math.random() * 16777215).toString(16),
             }}
           >
-            <span className="label">{el.label}</span>
-            <span className="percentage"> {el.percentage}%</span>
+            <span>{el.label}</span>
+            <span>{el.percentage}%</span>
           </li>
         ))}
       </ul>
     </section>
   );
 };
+
+Statistics.propTypes = {
+  stats: PropTypes.array.isRequired
+}
+
 export default Statistics;

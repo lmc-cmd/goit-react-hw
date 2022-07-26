@@ -1,17 +1,13 @@
-import './TransactionHistory.module.css';
+import PropTypes from 'prop-types'
+import styles from './TransactionHistory.module.css';
+
 const TransactionHistory = props => {
   return (
     <table
-      className="transaction-history"
-      style={{ width: '800px', border: '2px solid' }}
-    >
+      className={styles["transaction-history"]}>
       <thead>
         <tr
-          className="transaction-head"
-          style={{
-            backgroundColor: 'aqua',
-          }}
-        >
+          className={styles["transaction-head"]}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -29,4 +25,10 @@ const TransactionHistory = props => {
     </table>
   );
 };
+
+TransactionHistory.propTypes = {
+  transactions: PropTypes.array.isRequired
+}
+
+
 export default TransactionHistory;

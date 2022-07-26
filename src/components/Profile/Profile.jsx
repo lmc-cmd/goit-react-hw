@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types'
 import styles from './Profile.module.css'
+
 const Profile = props => {
   return (
     <div className="profile">
@@ -30,5 +32,8 @@ const Profile = props => {
       </ul>
     </div>
   );
-};
+}
+Profile.propTypes = {
+  props: PropTypes.object
+}
 export default Profile;
