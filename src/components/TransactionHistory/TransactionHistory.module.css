@@ -1,0 +1,13 @@
+thead tr{
+    text-align: center
+}
+tr {
+    text-align: right
+}
+tbody tr:nth-child(odd) {
+    background-color: #b3babd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #7cbad4;
+}

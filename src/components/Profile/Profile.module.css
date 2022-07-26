@@ -1,0 +1,33 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tag,
+.location {
+  margin: 5px;
+  color: slategray;
+}
+.name {
+  color: black;
+  margin: 5px;
+  font-weight: bold;
+}
+.avatar {
+  width: 150px;
+  border-radius: 76px;
+  background-color: aqua;
+}
+.stats {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  font-size: 32px;
+  width: 130px;
+}
