@@ -1,4 +1,4 @@
-import './TransactionHistory.module.css'
+import './TransactionHistory.module.css';
 const TransactionHistory = props => {
   return (
     <table
@@ -19,9 +19,7 @@ const TransactionHistory = props => {
       </thead>
       <tbody>
         {props.transactions.map(el => (
-          <tr
-            key={el.id}
-          >
+          <tr key={el.id}>
             <td>{el.type}</td>
             <td>{el.amount}</td>
             <td>{el.currency}</td>
