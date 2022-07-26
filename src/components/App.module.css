@@ -1,9 +1,6 @@
 .main-container {
-  /* height: 100%; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   font-size: 40;
-  /* color: #010101; */
   flex-direction: column;
 }

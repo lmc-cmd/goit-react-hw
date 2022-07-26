@@ -34,6 +34,10 @@ const Profile = props => {
   );
 }
 Profile.propTypes = {
-  props: PropTypes.object
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired
+
 }
 export default Profile;
